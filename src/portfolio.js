@@ -2,52 +2,62 @@
 
 // To change portfolio colors globally go to the  _globalColor.scss file
 
+import emoji from "react-easy-emoji";
+import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+
+// Splash Screen
+
+const splashScreen = {
+  // enabled: true, // set false to disable splash screen
+  enabled: true, // set false to disable splash screen
+  animation: splashAnimation,
+  duration: 500 // Set animation duration as per your animation
+};
+
 // Summary And Greeting Section
 
-import emoji from "react-easy-emoji";
-
 const illustration = {
-  animated: true // set to false to use static SVG
+  animated: true // Set to false to use static SVG
 };
 
 const greeting = {
-  username: "Rsin",
-  title: "Hi all, I'm Rahul",
+  username: "Dhruv Rana",
+  title: "Hi all, I'm Dhruv Rana",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with Android / JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A passionate Full Stack Flutter Developer 🚀 having an experience of building Native Mobile applications with Java / Kotlin / Dart and some other cool libraries and frameworks."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1QwhQzGJ5ZAho2O3kJty8xtMZoMd1u0qW/view?usp=sharing",
+    "https://drive.google.com/file/d/1KEvOTmCODx4DNxk0rnj4GaBCxnUXaWQA/view", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/Rahul7f",
-  linkedin: "https://www.linkedin.com/in/rahul00/",
-  gmail: "rahulsingh.83748@gmail.com",
-  facebook: "https://www.facebook.com/rsin2105/",
-  instagram:"https://www.instagram.com/rsin_2105/",
-  twitter:"https://twitter.com/_rsin",
-  // medium: "https://medium.com/@rsin2105",
-  stackoverflow: "https://stackoverflow.com/users/14077964/rahul-singh",
-  // Instagram and Twitter are also supported in the links!
+  github: "https://github.com/Dhruvrana8",
+  linkedin: "https://www.linkedin.com/in/dhruv-rana-bb94661b4/",
+  gmail: "dhruvrana4@gmail.com.com",
+  // gitlab: "https://gitlab.com/saadpasta",
+  // facebook: "https://www.facebook.com/saad.pasta7",
+  // medium: "https://medium.com/@saadpasta",
+  stackoverflow: "https://stackoverflow.com/users/18635210/dhruv-rana",
+  // Instagram, Twitter and Kaggle are also supported in the links!
+  // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
 };
 
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "What I do ",
+  subTitle: "CRAZY FULL STACK FLUTTER DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces of web and mobile applications"
+      "⚡ Develop highly interactive Front end / User Interfaces for your Mobile applications"
     ),
-    emoji("⚡ Design UI of Mobile and Web application"),
+    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ Integration of third party services such as Firebase / AWS / Digital Ocean"
+      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
     )
   ],
 
@@ -56,46 +66,32 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "Android",
-      fontAwesomeClassname: "fab fa-android"
+      skillName: "Flutter",
+      fontAwesomeClassname: "fa-solid fa-mobile"
+      
     },
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+      skillName: "Java",
+      fontAwesomeClassname: "fa-brands fa-java"
+      
     },
     {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
     },
     {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
       skillName: "nodejs",
       fontAwesomeClassname: "fab fa-node"
     },
-    
     {
-      skillName: "Figma",
-      fontAwesomeClassname: "fab fa-figma"
+      skillName: "npm",
+      fontAwesomeClassname: "fab fa-npm"
     },
     {
       skillName: "sql-database",
       fontAwesomeClassname: "fas fa-database"
     },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
+    
     {
       skillName: "firebase",
       fontAwesomeClassname: "fas fa-fire"
@@ -104,10 +100,6 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "python",
       fontAwesomeClassname: "fab fa-python"
     }
-    // {
-    //   skillName: "docker",
-    //   fontAwesomeClassname: "fab fa-mongodb"
-    // }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -119,23 +111,24 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Dronacharya College of Engineering",
-      logo: require("./assets/images/mdu.png"),
-      subHeader: "Bachelor’s of Technology in Computer Science",
-      duration: "September 2020 - Present",
+      logo: require("./assets/images/stanfordLogo.png"),
+      subHeader: "B.Tech in Computer Science",
+      duration: "September 2019 - 2023",
+      // desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
+      // descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+    },
+    {
+      schoolName: "Summer Fields School",
+      logo: require("./assets/images/Summer Fields School.jpg"),
+      subHeader: "Class 10 & Class 12",
+      // duration: "September 2017 - April 2019",
       // desc: "Participated in the research of XXX and published 3 papers.",
       // descBullets: [
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       // ]
-    },
-    {
-      schoolName: "Government Polytechnic Manesar",
-      logo: require("./assets/images/gmp.png"),
-      subHeader: "Diploma in Computer Science",
-      duration: "September 2018 - September 2020",
-      desc: "Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      // descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
+    
   ]
 };
 
@@ -145,20 +138,28 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Android development",
-      progressPercentage: "95%"
+      Stack: "Flutter", //Insert stack or technology you have experience in
+      progressPercentage: "95%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "MERN", //Insert stack or technology you have experience in
+      Stack: "Native Android Development", //Insert stack or technology you have experience in
       progressPercentage: "85%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "UI/UX",
-      progressPercentage: "70%"
+      Stack: "Backend",
+      progressPercentage: "80%"
+    },
+    {
+      Stack: "My Sql",
+      progressPercentage: "80%"
+    },
+    {
+      Stack: "MongoDB",
+      progressPercentage: "80%"
     },
     {
       Stack: "Programming",
-      progressPercentage: "80%"
+      progressPercentage: "70%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -167,45 +168,33 @@ const techStack = {
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  // display: true, //Set it to true to show workExperiences Section
+  display: false, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Android Developer Intern",
-      company: "INDRADHANU SOFTWARE LLP",
-      companylogo: require("./assets/images/faatak.png"),
-      date: "June 2021 – Present",
-      // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Software Engineer",
+      company: "Facebook",
+      companylogo: require("./assets/images/facebookLogo.png"),
+      date: "June 2018 – Present",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
-        "Reduce app size by 1MB",
-        "Work with API'S using retrofit",
-        "Work on improving UI",
-        "Designed the UI & functionalities",
-        "Improved the performance & efficiency of the application for latest android version",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       ]
     },
     {
-      role: "Mobile Developer Intern",
-      company: "Spark Foundaton PVT. LTD",
-      companylogo: require("./assets/images/spark.png"),
-      date: "June 2021 – 1mo",
-      // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: [
-        "Worked on android application for a banking service",
-        "Designed the UI & functionalities",
-        "Improved the performance & efficiency of the application for latest android version",
-      ]
+      role: "Front-End Developer",
+      company: "Quora",
+      companylogo: require("./assets/images/quoraLogo.png"),
+      date: "May 2017 – May 2018",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
-      role: "Cyber Security Intern",
-      company: "Gurugram police",
-      companylogo: require("./assets/images/gPolice.png"),
-      date: "June 2021 – 1mo",
-      // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: [
-        "Learn about cyber security",
-        "Work on verious case studies",
-        "Learn about verious tools and softwares used in cyber security",
-      ]
+      role: "Software Engineer Intern",
+      company: "Airbnb",
+      companylogo: require("./assets/images/airbnbLogo.png"),
+      date: "Jan 2015 – Sep 2015",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
   ]
 };
@@ -215,74 +204,71 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
 
 const bigProjects = {
   title: "Big Projects",
-  subtitle: "MY SOME BIG PROJECTS",
+  subtitle: "SOME SELF PROJECT WHICH HELPED ME IN MY PATH",
   projects: [
     {
-      image: require("./assets/images/tweedios.png"),
-      projectName: "Tweedios",
-      projectDesc: "Ads Free Video Downloader for Twitter helps you download video or gif.",
+      image: require("./assets/images/WeatherApp.jpeg"),
+      projectName: "Geo Location Weather App",
+      projectDesc: "Geo Location Weather App  which help the user to know the Weather.",
       footerLink: [
         {
-          name: "Download Now",
-          url: "https://play.google.com/store/apps/details?id=com.monkdevs.tweedios"
+          name: "GitHub",
+          url: "https://github.com/Dhruvrana8/weather_api"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/netflix_clone.png"),
-      projectName: "Netflix Clone",
-      projectDesc: "Watch your Favourite movie and series trailer",
+      image: require("./assets/images/Ai Radio Big.jpg"),
+      projectName: "Ai-Radio",
+      projectDesc: "A Radio which can be controlled by voice commands",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "https://netflix-clone-94af8.web.app/"
-        }
-        //  you can add extra buttons here.
-      ]
-    },
-    {
-      image: require("./assets/images/coviHelp.png"),
-      projectName: "CoviHelp",
-      projectDesc: "Connect food givers to needy people and provide information about vaccine centers",
-      footerLink: [
-        {
-          name: "Github",
-          url: "https://github.com/Rahul7f/Covihelp"
+          name: "GitHub",
+          url: "https://github.com/Dhruvrana8/Ai-Radio/tree/master"
         }
       ]
     },
-
     {
-      image: require("./assets/images/videoCall.png"),
-      projectName: "KIKO",
-      projectDesc: "group video calling and video call with stranger",
+      image: require("./assets/images/Calculator App.png"),
+      projectName: "Calculator App",
+      projectDesc: "A Calculator App which can solve mathematical problems",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "https://kiko-video-chat.herokuapp.com/#"
+          name: "GitHub",
+          url: "https://github.com/Dhruvrana8/Ai-Radio/tree/master"
         }
       ]
     },
-
     {
-      image: require("./assets/images/early.png"),
-      projectName: "EarlyBird",
-      projectDesc: "open chat platofrm",
+      image: require("./assets/images/Mario App.jpeg"),
+      projectName: "Mario Clone",
+      projectDesc: "A Mario Game Clone",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "https://young-earth-35736.herokuapp.com/"
+          name: "GitHub",
+          url: "https://github.com/Dhruvrana8/mario-Flutter/tree/master"
         }
       ]
-    }
+    },
+    {
+      image: require("./assets/images/Flappy Birds App.png"),
+      projectName: "Flappy-Bird",
+      projectDesc: "A Flappy-Bird Game Clone",
+      footerLink: [
+        {
+          name: "GitHub",
+          url: "https://github.com/Dhruvrana8/Flappy-Bird/tree/master"
+        }
+      ]
+    },
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -297,52 +283,52 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Google Cloud Certificate",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
+        "Google Cloud 30 Days Google Cloud Challenge",
+      image: require("./assets/images/Dhruv Rana Google Cloud.jpeg"),
       footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
+        // {
+        //   name: "Certification",
+        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+        // },
+        // {
+        //   name: "Award Letter",
+        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+        // },
+        // {
+        //   name: "Google Code-in Blog",
+        //   url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+        // }
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "Front End Development Libraries Certification",
       subtitle:
         "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
+      image: require("./assets/images/Dhruv Rana Free Code Camp.png"),
       footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
+        // {
+        //   name: "View Google Assistant Action",
+        //   url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+        // }
       ]
     },
 
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
+      title: "Java Spoken Tutorial IIT Bombay",
+      subtitle: "Java Exam Conducted By IIT Bombay Got 92.50%",
+      image: require("./assets/images/Dhruv Java.jpg"),
       footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
+        // {name: "Certification", url: ""},
+        // {
+        //   name: "Final Project",
+        //   url: "https://pakistan-olx-1.firebaseapp.com/"
+        // }
       ]
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -351,7 +337,7 @@ const blogSection = {
   title: "Blogs",
   subtitle:
     "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-
+  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
       url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
@@ -366,6 +352,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
+  // display: true // Set false to hide this section, defaults to true
   display: false // Set false to hide this section, defaults to true
 };
 
@@ -385,6 +372,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
+  // display: true // Set false to hide this section, defaults to true
   display: false // Set false to hide this section, defaults to true
 };
 
@@ -398,6 +386,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
+  // display: true // Set false to hide this section, defaults to true
   display: false // Set false to hide this section, defaults to true
 };
 
@@ -405,21 +394,23 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+91-8368690748",
-  email_address: "rahulsingh.83748@gmail.com"
+  // number: "+92-0000000000",
+  email_address: "dhruvrana4@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
-  userName: "_rsin", //Replace "twitter" with your twitter username without @
+  userName: "twitter", //Replace "twitter" with your twitter username without @
   display: false // Set true to display this section, defaults to false
+  // display: true // Set true to display this section, defaults to false
 };
 
 export {
   illustration,
   greeting,
   socialMediaLinks,
+  splashScreen,
   skillsSection,
   educationInfo,
   techStack,
