@@ -111,7 +111,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Dronacharya College of Engineering",
-      logo: require("./assets/images/stanfordLogo.png"),
+      logo: require("./assets/images/Dronacharya College Icon.jpeg"),
       subHeader: "B.Tech in Computer Science",
       duration: "September 2019 - 2023",
       // desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
