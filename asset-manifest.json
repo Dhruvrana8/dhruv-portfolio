@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.0186a6c0.chunk.css",
-    "main.js": "/static/js/main.9e4aa806.chunk.js",
-    "main.js.map": "/static/js/main.9e4aa806.chunk.js.map",
+    "main.js": "/static/js/main.5dcdb899.chunk.js",
+    "main.js.map": "/static/js/main.5dcdb899.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.335a39f8.js",
     "runtime-main.js.map": "/static/js/runtime-main.335a39f8.js.map",
     "static/js/2.628dfae3.chunk.js": "/static/js/2.628dfae3.chunk.js",
@@ -14,7 +14,7 @@
     "static/js/4.385ae977.chunk.js": "/static/js/4.385ae977.chunk.js",
     "static/js/4.385ae977.chunk.js.map": "/static/js/4.385ae977.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.320a79f76011196a3910118b2b921002.js": "/precache-manifest.320a79f76011196a3910118b2b921002.js",
+    "precache-manifest.dac9b250af5ed1966053808a5b434644.js": "/precache-manifest.dac9b250af5ed1966053808a5b434644.js",
     "service-worker.js": "/service-worker.js",
     "static/css/3.9ee98fe0.chunk.css.map": "/static/css/3.9ee98fe0.chunk.css.map",
     "static/css/4.19a7ea80.chunk.css.map": "/static/css/4.19a7ea80.chunk.css.map",
@@ -33,13 +33,12 @@
     "static/media/manOnTable.svg": "/static/media/manOnTable.52be3144.svg",
     "static/media/quoraLogo.png": "/static/media/quoraLogo.4b2938b9.png",
     "static/media/skill.svg": "/static/media/skill.34409398.svg",
-    "static/media/stanfordLogo.png": "/static/media/stanfordLogo.3b758ef5.png",
     "static/media/TalkCard.scss": "/static/media/talksCardBack.13780cdd.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.335a39f8.js",
     "static/js/2.628dfae3.chunk.js",
     "static/css/main.0186a6c0.chunk.css",
-    "static/js/main.9e4aa806.chunk.js"
+    "static/js/main.5dcdb899.chunk.js"
   ]
 }
