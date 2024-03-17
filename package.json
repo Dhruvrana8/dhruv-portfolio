@@ -1,6 +1,5 @@
 {
-  "homepage": "http://dhruvrana.me/",
- 
+  "homepage": "http://dhruvrana.com/",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
@@ -24,7 +23,6 @@
     "predeploy": "npm run build",
     "start": "node fetch.js && react-scripts start",
     "build": "node fetch.js && react-scripts build",
-  
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -37,7 +35,6 @@
   "browserslist": {
     "production": [
       ">0.2%",
-     
       "not op_mini all"
     ],
     "development": [
